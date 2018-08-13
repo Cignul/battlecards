@@ -88,10 +88,17 @@ The response will be a new game object
 ```
 
 Building this game would breakdown as follows:
-	1. Create form for a player to provide their name, choose the number of opponents and the game set, then submit to start
-		- This should trigger a method to start the game posting the data to the server.
-		- The response object can then be used to draw the data
-	2. Write a function to handle drawing the cards that come back from the server (remember: if an enemy card is not marked 'revealed' you should draw the back of a card not the front with stats.
+ 
+ 1. Create form for a player to provide their name, choose the number of opponents and the game set, then submit to start
+	- This should trigger a method to start the game posting the data to the server.
+	- The response object can then be used to draw the data
+ 2. Write a function to handle drawing the cards that come back from the server (*remember: if an enemy card is not marked 'revealed' you should draw the back of a card not the front*)
+ 3. The player will click their card and one of the enemy cards then select 'play'
+ 	- This should submit the put request to the server which will return a new game object in response, then redraw
+ 4. Win a card is dead, it is added to the 'dead' array on the object, while its not required, maybe render this 'discard pile' somewhere on the page
+ 	- You will most likely draw only the first index of the dead array
+ 5. When the game is over, draw the result to the screen and provide the option to start over.
+ 	- The process should repeat from the earlier new game methods
 		
 
 Write the game so the player choses their card, and an opponents card (the first round this will be a blind guess as the cards will only be turned over if they are marked 'revealed')
@@ -104,5 +111,5 @@ Write the game so the player choses their card, and an opponents card (the first
 	- Once an enemy card has been attacked its stats are revealed until that card is destroyed
 
 ### Functionality
-	- The player does not have to manually draw new cards, thier hand will always be full until their deck is empty
+	- The player does not have to manually draw new cards, their hand will always be full until their deck is empty
 	- The game is winnable/loseable and tieable
