@@ -24,7 +24,9 @@ To get started you need to know about three important routes or API endpoints.
 	
 
 
-### Setting up the Game Config
+### Starting a new game
+
+To start a new game you will need to send the following object to the post route:
 ```javascript
 {
 	"gameConfig":{
@@ -34,6 +36,8 @@ To get started you need to know about three important routes or API endpoints.
 	}
 }
 ```
+
+The response will be a new game object
 	
 ### The Game Object
 ```javascript
@@ -82,6 +86,15 @@ To get started you need to know about three important routes or API endpoints.
 // When the server is ready
 // You will recieve a ready response
 ```
+
+Building this game would breakdown as follows:
+	1. Create form for a player to provide their name, choose the number of opponents and the game set, then submit to start
+		- This should trigger a method to start the game posting the data to the server.
+		- The response object can then be used to draw the data
+	2. Write a function to handle drawing the cards that come back from the server (remember: if an enemy card is not marked 'revealed' you should draw the back of a card not the front with stats.
+		
+
+Write the game so the player choses their card, and an opponents card (the first round this will be a blind guess as the cards will only be turned over if they are marked 'revealed')
 
 
 ## Requirements
