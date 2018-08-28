@@ -37,12 +37,17 @@
   //     }
   //   },
   //   methods: {
+    //POST /cards this is how you craete a new game a game config objecti s optional see below
   //     "createGame": {
   //       "gameConfig": {
   //         "playerName": "",
   //         "opponents": 1,
   //         "set": 1
   //       }
+  //attack method will be server put see below and clean up code.
+          //attack: {
+            // PUTl/ cards/;gameid: edits the game state only accepts an attack object see below
+         // }
 
   //     }
   //   }
