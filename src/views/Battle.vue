@@ -6,7 +6,7 @@
       <div class="card-body">
         <h5 class="card-title">Fighter1</h5>
         <p class="card-text">health and shield maybe</p>
-        <!-- Fighter 1 -->
+        <!-- Fighter 1 button-->
         <a href="#" class="btn btn-primary">select this hero</a>
       </div>
       <div class="card" style="width: 18rem;">
@@ -14,9 +14,10 @@
         <div class="card-body">
           <h5 class="card-title">Fighter2</h5>
           <p class="card-text">not sure if i'll use cards</p>
-          <!-- Fighter 2 -->
+          <!-- Fighter 2 button  ** TRY TO PUT THIS IN AN ARRAY INSTEAD OF 5 HTML TEMPLATES -->
           <a href="#" class="btn btn-primary">choose this dude</a>
         </div>
+
       </div>
 
       <button>maybe play</button>
@@ -27,26 +28,26 @@
   </div>
 </template>
 <script>
-  export default {
-    name: 'battle',
-    data() {
-      return {
+  // export default {
+  //   name: 'battle',
+  //   data() {
+  //     return {
 
 
-      }
-    },
-    methods: {
-      // "createGame": {
-      //   "gameConfig": {
-      //     "playerName": "",
-      //     "opponents": 1,
-      //     "set": 1
-      //   }
+  //     }
+  //   },
+  //   methods: {
+  //     "createGame": {
+  //       "gameConfig": {
+  //         "playerName": "",
+  //         "opponents": 1,
+  //         "set": 1
+  //       }
 
-      // }
-    }
+  //     }
+  //   }
 
-  }
+  // }
 
 
 
