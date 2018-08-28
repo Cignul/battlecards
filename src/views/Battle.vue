@@ -1,5 +1,5 @@
 <template>
-  <div class="vendr">
+  <div class="battle">
     <h1>Time to dance!</h1>
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="" alt="Card image cap">
