@@ -1,6 +1,6 @@
 # battle-cards
 
-Welcome to the jungle... It's time to get your game on!
+Welcome to the jungle... It's time to get your game on! 
 
 You have been tasked with building out the front-end of an intense card battling game. 
 The server-side team just finished up with the backend game logic for how the game works. 
