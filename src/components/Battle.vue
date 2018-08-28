@@ -18,9 +18,10 @@
           <a href="#" class="btn btn-primary">choose this dude</a>
         </div>
       </div>
+
+      <button>maybe play</button>
+      <button>maybe reset</button>
+      <button>idk if i need this button</button>
+      <h4>cards remaining, probably move me</h4>
     </div>
-    <button>maybe play</button>
-    <button>maybe reset</button>
-    <button>idk if i need this button</button>
-    <h4>cards remaining, probably move me</h4>
 </template>
