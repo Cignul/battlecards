@@ -32,17 +32,18 @@
     data() {
       return {
 
+
       }
     },
     methods: {
-      "createGame": {
-        "gameConfig": {
-          "playerName": "",
-          "opponents": 1,
-          "set": 1
-        }
+      // "createGame": {
+      //   "gameConfig": {
+      //     "playerName": "",
+      //     "opponents": 1,
+      //     "set": 1
+      //   }
 
-      }
+      // }
     }
 
   }
@@ -50,3 +51,7 @@
 
 
 </script>
+
+
+<style>
+</style>
