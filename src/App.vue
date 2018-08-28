@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <!-- need test next line  | -->
-      <router-link to="/battle">battle</router-link>
+      <!-- <router-link to="/battle">battle</router-link> -->
     </div>
     <router-view/>
   </div>

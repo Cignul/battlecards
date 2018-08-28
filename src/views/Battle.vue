@@ -1,6 +1,6 @@
 <template>
   <div class="vendr">
-    <h1>Time to dance!{{battle.name}}</h1>
+    <h1>Time to dance!</h1>
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="" alt="Card image cap">
       <div class="card-body">
@@ -24,4 +24,29 @@
       <button>idk if i need this button</button>
       <h4>cards remaining, probably move me</h4>
     </div>
+  </div>
 </template>
+<script>
+  export default {
+    name: 'battle',
+    data() {
+      return {
+
+      }
+    },
+    methods: {
+      "createGame": {
+        "gameConfig": {
+          "playerName": "",
+          "opponents": 1,
+          "set": 1
+        }
+
+      }
+    }
+
+  }
+
+
+
+</script>

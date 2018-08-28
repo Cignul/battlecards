@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Battle from './components/Battle'
+import Battle from './views/Battle.vue'
 //import Vendr from './views/Vendr.vue'
 
 
@@ -11,7 +11,7 @@ export default new Router({
     //using other examples to set up this router need to finish Battle component
     //or at least have a function for it to look for
     {
-      path: './',
+      path: '/',
       name: 'battle',
       component: Battle
     },
