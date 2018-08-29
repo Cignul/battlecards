@@ -17,22 +17,24 @@
       },
       allGames() {
         return this.$store.state.cards
-      },
-      //currently working on gameconfig
-      gameConfig() {
-        return this.$store.state.get
       }
-
     },
     mounted() {
       this.$store.dispatch('getAllGames');
     },
+
+
     methods: {
       setMyHand(cards) {
         this.$store.dispatch("setMyHand", cards);
+      },
+      //currently working on gameconfig
+      gameConfig() {
+        console.log("hello from gameconfig!!")
+        return this.$store.state.get
       }
-
     },
+
     components: {
       myHand
     }
