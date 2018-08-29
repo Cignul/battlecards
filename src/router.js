@@ -15,6 +15,8 @@ export default new Router({
       name: 'battle',
       component: Battle
     },
+
+    // add paths for other vues, myHand, opponentHand
     // {
     //   path: '/',
     //   name: 'slap',
