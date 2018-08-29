@@ -17,6 +17,10 @@
       },
       allGames() {
         return this.$store.state.cards
+      },
+      //currently working on gameconfig
+      gameConfig() {
+        return this.$store.state.get
       }
 
     },
