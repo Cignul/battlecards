@@ -7,9 +7,14 @@
       <!-- Fighter 1 button-->
       <a href="#" class="btn btn-primary">select this hero</a>
     </div>
-
+  </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+    name: 'myHand'
+
+  }
+</script>
 
 <style></style>

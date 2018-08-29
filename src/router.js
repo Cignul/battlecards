@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Battle from './views/Battle.vue'
+import myHand from './components/myHand.vue'
 //import Vendr from './views/Vendr.vue'
 
 
@@ -16,11 +17,11 @@ export default new Router({
       component: Battle
     },
 
-    // add paths for other vues, myHand, opponentHand
+    // add paths for other vues, myHand, opponentHand broke 
     // {
-    //   path: '/',
-    //   name: 'slap',
-    //   component: Slap
+    //   path: '/battle',
+    //   name: 'myHand',
+    //   component: myHand
     // },
     // {
     //   path: '/vendr',
