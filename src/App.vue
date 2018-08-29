@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!-- need test next line  | -->
-      <!-- <router-link to="/battle">battle</router-link> -->
+      <!-- need test next line probably remove, link takes to blank page| -->
+      <router-link to="/battle">battle</router-link>
     </div>
     <router-view/>
   </div>

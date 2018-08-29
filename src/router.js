@@ -11,7 +11,7 @@ export default new Router({
     //using other examples to set up this router need to finish Battle component
     //or at least have a function for it to look for
     {
-      path: '/',
+      path: '/battle',
       name: 'battle',
       component: Battle
     },
@@ -31,5 +31,5 @@ export default new Router({
     //   component: Vendr
 
     // }
-  ]
+  ],
 })

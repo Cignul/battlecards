@@ -11,7 +11,15 @@ let batteApi = axios.create({
 })
 
 export default new Vuex.Store({
-  state: {},
+  state: {
+    cards: [], //from db
+    myCards: [{}], //from myCards component vue
+    opponentCards: [{}], //from opponentCards component vue
+    game: {} //from Game.vue
+
+  },
+  //cards selected and deck state will be mutations
   mutations: {},
+  //when things need to update to/from server
   actions: {}
 })
