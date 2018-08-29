@@ -12,7 +12,7 @@
   //   name: 'battle',
   //   data() {
   //     return {
-
+  //       console: console.log("hello from data method in battlevue")
 
   //     }
   //   },
