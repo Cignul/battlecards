@@ -3,6 +3,7 @@
     <h1>Time to dance!</h1>
     <h4>cards remaining, position might work</h4>
     <myHand></myHand>
+    <opponentHand></opponentHand>
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
   </div>
@@ -10,6 +11,8 @@
 
 <script>
   import myHand from '../components/myHand'
+  import opponentHand from '../components/opponentHand'
+
   export default {
     computed: {
       myHand() {
@@ -17,6 +20,9 @@
       },
       allGames() {
         return this.$store.state.cards
+      },
+      opponentHand() {
+        return this.$store.state.opponentHand
       }
     },
     mounted() {
@@ -29,7 +35,7 @@
         this.$store.dispatch("setMyHand", cards);
       },
       //currently working on gameconfig
-      gameConfig() {
+      gameConfig(game) {
         console.log("hello from gameconfig!!")
         return this.$store.state.get
       }

@@ -9,10 +9,17 @@
       <!-- seperate views(components) for hand and opponent hand probably -->
       <a href="#" class="btn btn-primary">choose this dude</a>
     </div>
+  </div>
 
 
 </template>
 
-<script></script>
+<script>
+  export default {
+    name: 'opponentHand'
+
+  }
+</script>
+
 
 <style></style>
