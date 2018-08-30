@@ -2,7 +2,9 @@
   <div class="">
     <h1>Time to dance!</h1>
     <h4>cards remaining:# (add dynamic cards.length) </h4>
-    <opponentHand></opponentHand>
+
+    <!-- v for calling set hand? not sure -->
+    <opponentHand class="setMyHand"></opponentHand>
     <myHand></myHand>
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
