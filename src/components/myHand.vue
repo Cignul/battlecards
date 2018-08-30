@@ -1,5 +1,6 @@
 <template>
   <div>
+
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="" alt="Card image cap">
       <div class="card-body">
@@ -11,6 +12,7 @@
       <div v-for="card in setGame.players[0].hand">
         {{card.name}}</div>
     </div>
+
   </div>
 </template>
 

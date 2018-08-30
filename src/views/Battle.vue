@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h1>Time to dance!</h1>
+    <h2>Time to dance!</h2>
     <h4>cards remaining:# (add dynamic cards.length) </h4>
 
     <!-- v for calling set hand? not sure -->
