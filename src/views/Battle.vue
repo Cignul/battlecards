@@ -4,7 +4,7 @@
     <h4>cards remaining:# (add dynamic cards.length) </h4>
 
     <!-- v for calling set hand? not sure -->
-    <opponentHand class="setMyHand"></opponentHand>
+    <opponentHand></opponentHand>
     <myHand></myHand>
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
@@ -25,9 +25,13 @@
       },
       opponentHand() {
         return this.$store.state.opponentHand
+      },
+      setMyHand() {
+        return this.$store.state.get
       }
     },
     mounted() {
+      //not sure if dispatch is right, trying to get the cards in hand
       this.$store.dispatch('getAllGames');
     },
 
