@@ -13,7 +13,7 @@ let battleApi = axios.create({
 export default new Vuex.Store({
   state: {
     cards: [], //from db not sure if this is how to get tho
-    myCards: [{}], //from myCards component vue
+    myCards: {}, //from myCards component vue
     opponentCards: [{}], //from opponentCards() method in component vue
     game: {} //from Game.vue
 
@@ -35,6 +35,13 @@ export default new Vuex.Store({
       battleApi.get('')
         .then(res => {
           commit('setAllGames', res.data)
+        })
+    },
+    createNewGame({ commit, dispatch }) {
+      battleApi.post('')
+        .then(res => {
+          console.log(res)
+          commit("setCurrentGame", res.data)
         })
     }
   }

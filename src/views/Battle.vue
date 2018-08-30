@@ -33,7 +33,10 @@
     mounted() {
       //not sure if dispatch is right, trying to get the cards in hand
       this.$store.dispatch('getAllGames');
+      this.$store.dispatch('createNewGame');
+
     },
+
 
 
     methods: {
