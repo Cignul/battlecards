@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <h1>Time to dance!</h1>
-    <h4>cards remaining, position might work</h4>
+    <h4>cards remaining:# (add dynamic cards.length) </h4>
     <opponentHand></opponentHand>
     <myHand></myHand>
     <button> play</button>
