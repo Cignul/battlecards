@@ -2,8 +2,8 @@
   <div class="">
     <h1>Time to dance!</h1>
     <h4>cards remaining, position might work</h4>
-    <myHand></myHand>
     <opponentHand></opponentHand>
+    <myHand></myHand>
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
   </div>
@@ -42,6 +42,7 @@
     },
 
     components: {
+      opponentHand,
       myHand
     }
   };
