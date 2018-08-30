@@ -16,7 +16,7 @@ export default new Router({
       name: 'battle',
       component: Battle
     },
-
+    // I think these can actually be loaded onto the battle vue from their components
     // add paths for other vues, myHand, opponentHand broke 
     // {
     //   path: '/battle',
