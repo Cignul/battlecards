@@ -46,7 +46,7 @@
       setMyHand(cards) {
         this.$store.dispatch("setMyHand", cards);
       },
-      //currently working on gameconfig
+      //currently working on gameconfig TRYING TO IMPLEMENT THIS
       gameConfig(game) {
         playerName: ""; //The player's name
         opponents: 1; // Defaults to 1 if not specified
@@ -54,7 +54,8 @@
 
         console.log("hello from gameconfig!!")
         return this.$store.state.get
-      }
+      },
+
     },
 
     components: {
