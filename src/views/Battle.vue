@@ -6,7 +6,6 @@
       <input type=text placeholder="Name">
       <input type=number placeholder="#of opponents">
     </form>
-
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
     <opponentHand></opponentHand>
