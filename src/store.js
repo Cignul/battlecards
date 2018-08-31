@@ -47,8 +47,8 @@ export default new Vuex.Store({
     selectCards() {
       //i think i can do the @click and if both selected -> fire start game
     },
-    startGame() {
-
+    startGame(gameConfig) {
+      //a post request from server( would carry the game payload players etc.)
     }
   }
 })

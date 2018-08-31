@@ -7,7 +7,7 @@
           <h5 class="card-title">{{card.name}}</h5>
           <p class="card-text">health and shield maybe</p>
           <!-- Fighter 1 button-->
-          <a href="#" class="btn btn-primary">select this hero</a>
+          <a href="#" class="btn btn-primary" @click='selectHero'>select this hero</a>
         </div>
         <div>
           {{card.name}}</div>
@@ -22,6 +22,12 @@
     computed: {
       setGame() {
         return this.$store.state.game
+      }
+    },
+    methods: {
+      selectHero() {
+        //needs to add the playerCardID to the payload
+        //from the @click button on card - update store w/ selected hero
       }
     }
 
