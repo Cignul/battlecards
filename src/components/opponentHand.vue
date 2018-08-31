@@ -1,10 +1,10 @@
 <template>
 
-  <div class="row">
-    <div class="card col-2" style="width: 18rem;">
+  <div class="row" style="justify-content: space-evenly">
+    <div class="card col-2" style="width: 18rem;" v-for="card in setGame.players[1].hand">
       <img class="card-img-top " src="./cardback.jpg" alt="Card image cap">
       <div class="card-body ">
-        <h6 class="card-title ">Opponent card 1</h6>
+        <h6 class="card-title ">{{card.name}}</h6>
         <p class="card-text ">enemy card face down until selected</p>
         <!-- Fighter 2 button  ** TRY TO PUT THIS IN AN ARRAY INSTEAD OF 5 HTML TEMPLATES -->
         <!-- need a vfor to iterate over 5 cards(i think) -->
@@ -18,7 +18,12 @@
 
 <script>
   export default {
-    name: 'opponentHand'
+    name: 'opponentHand',
+    computed: {
+      setGame() {
+        return this.$store.state.game
+      }
+    }
 
   }
 </script>

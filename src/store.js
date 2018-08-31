@@ -43,6 +43,12 @@ export default new Vuex.Store({
           console.log(res)
           commit("setCurrentGame", res.data)
         })
+    },
+    selectCards() {
+      //i think i can do the @click and if both selected -> fire start game
+    },
+    startGame() {
+
     }
   }
 })

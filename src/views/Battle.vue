@@ -6,11 +6,11 @@
       <input type=text placeholder="Name">
       <input type=number placeholder="#of opponents">
     </form>
-    <!-- v for calling set hand? not sure -->
-    <opponentHand></opponentHand>
-    <myHand></myHand>
+
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
+    <opponentHand></opponentHand>
+    <myHand></myHand>
   </div>
 </template>
 
@@ -47,7 +47,7 @@
         this.$store.dispatch("setMyHand", cards);
       },
       //currently working on gameconfig TRYING TO IMPLEMENT THIS
-      gameConfig(game) {
+      gameConfig(game) { //need to wire this up
         playerName: ""; //The player's name
         opponents: 1; // Defaults to 1 if not specified
         set: 2 // Card Images are generated base on game set 1-4
