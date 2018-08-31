@@ -1,18 +1,18 @@
 <template>
   <div>
-
-    <div class="card" style="width: 18rem;">
-      <img class="card-img-top" src="" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">Fighter1</h5>
-        <p class="card-text">health and shield maybe</p>
-        <!-- Fighter 1 button-->
-        <a href="#" class="btn btn-primary">select this hero</a>
+    <div class="row">
+      <div class="card col-2" style="width: 18rem;" v-for="card in setGame.players[0].hand">
+        <img class="card-img-top" src="" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Fighter1</h5>
+          <p class="card-text">health and shield maybe</p>
+          <!-- Fighter 1 button-->
+          <a href="#" class="btn btn-primary">select this hero</a>
+        </div>
+        <div>
+          {{card.name}}</div>
       </div>
-      <div v-for="card in setGame.players[0].hand">
-        {{card.name}}</div>
     </div>
-
   </div>
 </template>
 

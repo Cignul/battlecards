@@ -2,7 +2,10 @@
   <div class="">
     <h2>Time to dance!</h2>
     <h4>cards remaining:# (add dynamic cards.length) </h4>
-
+    <form>
+      <input type=text placeholder="Name">
+      <input type=number placeholder="#of opponents">
+    </form>
     <!-- v for calling set hand? not sure -->
     <opponentHand></opponentHand>
     <myHand></myHand>
@@ -45,6 +48,10 @@
       },
       //currently working on gameconfig
       gameConfig(game) {
+        playerName: ""; //The player's name
+        opponents: 1; // Defaults to 1 if not specified
+        set: 2 // Card Images are generated base on game set 1-4
+
         console.log("hello from gameconfig!!")
         return this.$store.state.get
       }
