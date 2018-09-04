@@ -9,7 +9,8 @@
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
     <opponentHand></opponentHand>
-    <myHand></myHand>
+    <myHand :playerCard="setPlayerHand"></myHand>
+
   </div>
 </template>
 
@@ -18,6 +19,16 @@
   import opponentHand from '../components/opponentHand'
 
   export default {
+    data() {
+      return {
+        attackPayload: {
+          playerId: "",
+          playerCardId: "",
+          opponentId: "",
+          opponentCardId: ""
+        }
+      }
+    },
     computed: {
       myHand() {
         return this.$store.state.myHand;
@@ -54,7 +65,10 @@
         console.log("hello from gameconfig!!")
         return this.$store.state.get
       },
-
+      setPlayerHand(playerID, cardID) {
+        this.attackPayload.playerId = playerID
+        this.attackPayload.playerCardId = cardID
+      }
     },
 
     components: {
