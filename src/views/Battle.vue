@@ -1,14 +1,14 @@
 <template>
   <div class="">
     <h2>Time to dance!</h2>
-    <h4>cards remaining:# (add dynamic cards.length) </h4>
+    <!-- <h4>cards remaining:# (add dynamic cards.length) </h4> -->
     <form>
       <input type=text placeholder="Name">
       <input type=number placeholder="#of opponents">
     </form>
     <!-- wire up send payload to this play button here -->
     <button> play</button>
-    <button> reset (setup re-draw game logic)</button>
+    <button> reset</button>
     <opponentHand :opponentCard="setOpponentHand"></opponentHand>
     <myHand :playerCard="setPlayerHand"></myHand>
 
