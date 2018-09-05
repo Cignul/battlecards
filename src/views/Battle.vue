@@ -11,9 +11,8 @@
     <!-- wire up send payload to this play button here have payload complete need to post to server on the @click -->
     <div v-if="game.id">
       <div v-if="game.over">
-        Notification({{game.winner}})
+        The winner is : {{game.winner.name}}
       </div>
-      <button> reset</button>
       <opponentHand :opponentCard="setOpponentHand"></opponentHand>
       <button @click="attack" v-if="attackPayload.playerCardId && attackPayload.opponentCardId">ATTACK</button>
       <myHand :playerCard="setPlayerHand"></myHand>
