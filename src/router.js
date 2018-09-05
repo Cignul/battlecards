@@ -16,6 +16,7 @@ export default new Router({
       name: 'battle',
       component: Battle
     },
+    //trying to get route to send the payload to server to play game
     {
       path: '/battle',
       name: 'attackPayload',
