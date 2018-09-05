@@ -28,6 +28,10 @@ export default new Vuex.Store({
     setAllGames(state, gameData) {
       state.cards = gameData
     },
+    //need to add muatation for attack payload
+    startGame(attackPayload) {
+
+    }
   },
   //when things need to update to/from server
   actions: {
@@ -47,8 +51,14 @@ export default new Vuex.Store({
     selectCards() {
       //i think i can do the @click and if both selected -> fire start game
     },
-    startGame(gameConfig) {
-      //a post request from server( would carry the game payload players etc.)
+    //a post request to server
+    startGame(attackPayload) {
+      battleApi.post('')
+        .then(res => {
+          console.log(res)
+          console.log("hello from startGame")
+        })
+
     }
   }
 })

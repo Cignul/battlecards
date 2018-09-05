@@ -16,13 +16,7 @@ export default new Router({
       name: 'battle',
       component: Battle
     },
-    //trying to get route to send the payload to server to play game
-    {
-      path: '/battle',
-      name: 'attackPayload',
-      component: Battle
 
-    },
     // I think these can actually be loaded onto the battle vue from their components
     // add paths for other vues
   ],
