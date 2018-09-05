@@ -6,8 +6,8 @@
       <input type=text placeholder="Name">
       <input type=number placeholder="#of opponents">
     </form>
-    <!-- wire up send payload to this play button here -->
-    <button> play</button>
+    <!-- wire up send payload to this play button here have payload complete need to post to server on the @click -->
+    <button @click=""> play</button>
     <button> reset</button>
     <opponentHand :opponentCard="setOpponentHand"></opponentHand>
     <myHand :playerCard="setPlayerHand"></myHand>
