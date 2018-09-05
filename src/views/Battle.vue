@@ -57,11 +57,11 @@
       setMyHand(cards) {
         this.$store.dispatch("setMyHand", cards);
       },
-      //currently working on gameconfig TRYING TO IMPLEMENT THIS
+
       gameConfig(game) { //need to wire this up
         playerName: ""; //The player's name
         opponents: 1; // Defaults to 1 if not specified
-        set: 2 // Card Images are generated base on game set 1-4
+        set: 2 // Card Images are generated based on game set 1-4
 
         console.log("hello from gameconfig!!")
         return this.$store.state.get
@@ -72,7 +72,7 @@
       },
       setOpponentHand(opponentCardId, opponentId) {
         this.attackPayload.opponentId = opponentId
-        this.opponentCardId = opponentCardId
+        this.attackPayload.opponentCardId = opponentCardId
       }
     },
 

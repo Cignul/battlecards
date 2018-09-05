@@ -25,6 +25,7 @@
       playerCard: {
         type: Function
       }
+
     },
     computed: {
       setGame() {
