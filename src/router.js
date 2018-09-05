@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import Battle from './views/Battle.vue'
 import myHand from './components/myHand.vue'
-//import Vendr from './views/Vendr.vue'
+import attackPayload from './views/Battle.vue'
 
 
 Vue.use(Router)
@@ -16,21 +16,13 @@ export default new Router({
       name: 'battle',
       component: Battle
     },
-    // I think these can actually be loaded onto the battle vue from their components
-    // add paths for other vues, myHand, opponentHand broke 
-    // {
-    //   path: '/battle',
-    //   name: 'myHand',
-    //   component: myHand
-    // },
-    // {
-    //   path: '/vendr',
-    //   name: 'vendr',
-    //   // route level code-splitting
-    //   // this generates a separate chunk (about.[hash].js) for this route
-    //   // which is lazy-loaded when the route is visited.
-    //   component: Vendr
+    {
+      path: '/battle',
+      name: 'attackPayload',
+      component: Battle
 
-    // }
+    },
+    // I think these can actually be loaded onto the battle vue from their components
+    // add paths for other vues
   ],
 })
