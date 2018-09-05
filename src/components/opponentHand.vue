@@ -1,7 +1,7 @@
 <template>
 
   <div class="row" style="justify-content: space-evenly">
-    <div class="card col-2" style="width: 18rem;" v-for="card in setGame.players[1].hand" @click="opponentCard(setGame.players[1].id, opponentCardId)">
+    <div class="card col-2" style="width: 18rem;" v-for="card in setGame.players[1].hand" @click="playerCard(setGame.players[1].id, card.id)">
       <img class="card-img-top " src="./cardback.jpg" alt="Card image cap" v-if="!visible">
       <img class="card-img-top" src="" alt="shown card" v-if="visible">
       <div class="card-body ">
@@ -22,7 +22,7 @@
   export default {
     name: 'opponentHand',
     props: {
-      opponentHand: {
+      opponentCard: {
         type: Function
       }
     },
@@ -32,8 +32,9 @@
       }
     },
     methods: {
+      //took care of this in store
       selectEnemy() {
-        //need to set the @click to get opponentcardId 
+
       }
     }
 

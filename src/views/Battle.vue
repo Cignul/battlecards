@@ -70,7 +70,7 @@
         this.attackPayload.playerId = playerID
         this.attackPayload.playerCardId = cardID
       },
-      setOpponentHand(opponentCardId, opponentId) {
+      setOpponentHand(opponentId, opponentCardId) {
         this.attackPayload.opponentId = opponentId
         this.attackPayload.opponentCardId = opponentCardId
       }
