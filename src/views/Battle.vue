@@ -6,9 +6,10 @@
       <input type=text placeholder="Name">
       <input type=number placeholder="#of opponents">
     </form>
+    <!-- wire up send payload to this play button here -->
     <button> play</button>
     <button> reset (setup re-draw game logic)</button>
-    <opponentHand></opponentHand>
+    <opponentHand :opponentCard="setOpponentHand"></opponentHand>
     <myHand :playerCard="setPlayerHand"></myHand>
 
   </div>
@@ -68,6 +69,10 @@
       setPlayerHand(playerID, cardID) {
         this.attackPayload.playerId = playerID
         this.attackPayload.playerCardId = cardID
+      },
+      setOpponentHand(opponentCardId, opponentId) {
+        this.attackPayload.opponentId = opponentId
+        this.opponentCardId = opponentCardId
       }
     },
 

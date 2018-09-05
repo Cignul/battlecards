@@ -46,9 +46,7 @@
     },
     methods: {
       selectHero() {
-        //needs to add the playerCardID to the payload
-        //from the @click button on card - update store w/ selected hero
-        //working here
+
       }
     }
 
